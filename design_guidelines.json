@@ -1,0 +1,151 @@
+{
+  "theme": "Light theme (Warm Linen Base)",
+  "typography": {
+    "fonts": {
+      "heading": "Cormorant Garamond",
+      "body": "Manrope",
+      "accent": "Playfair Display",
+      "install_command": "npx @fontsource/cormorant-garamond @fontsource/manrope @fontsource/playfair-display (or load via Google Fonts)"
+    },
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl font-light tracking-tighter leading-none",
+      "h2": "text-4xl sm:text-5xl font-medium tracking-tight leading-tight",
+      "h3": "text-2xl sm:text-3xl font-regular leading-snug",
+      "body": "text-base sm:text-lg font-light leading-relaxed text-black/80",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-current/60"
+    },
+    "rules": [
+      "NEVER use generic sans for headings (No Inter/Roboto).",
+      "Use extremely tight letter spacing on large headings.",
+      "Oversized quotes should feature 'Playfair Display' italic for an editorial feel.",
+      "Headings should use font-light or font-medium, avoiding overly heavy bold weights for elegance."
+    ]
+  },
+  "colors": {
+    "master_brand": {
+      "background": "#F9F6F0",
+      "text": "#1A1512",
+      "accent": "#C07C66",
+      "surface": "#FFFFFF",
+      "border": "#E5DFD3"
+    },
+    "sub_brands": {
+      "nourish_and_thrive": {
+        "primary": "#6B7F60",
+        "secondary": "#E1E5D8",
+        "text": "#1A1512",
+        "vibe": "Organic, Calm, Clinical, Comforting"
+      },
+      "women_prosper": {
+        "primary": "#D49A3E",
+        "secondary": "#F0E5D1",
+        "text": "#1A1512",
+        "vibe": "Abundant, Motivational, Vibrant"
+      },
+      "speaking_and_workshops": {
+        "primary": "#1E2B3C",
+        "secondary": "#D8DCE3",
+        "text": "#1A1512",
+        "vibe": "Executive, Polished, Structured, B2B"
+      }
+    },
+    "rules": [
+      "Base background is always warm linen (#F9F6F0). Do not use stark #FFFFFF except for specific floating content cards.",
+      "Apply the 'Tinted Grey' rule: never use pure black or grey.",
+      "Hover states for CTAs must visually match the sub-brand primary color."
+    ]
+  },
+  "visual_enhancers": {
+    "textures": "Subtle SVG noise overlay (opacity-20, mix-blend-multiply) across the entire site to remove digital flatness.",
+    "shapes": "Clipped frames for imagery—use tall arches, pill shapes, or sharp aspect ratios (e.g., 3:4 or 16:9). No default square corners.",
+    "overlays": "Hero images must use directional gradients (bg-gradient-to-t from-black/60 to-transparent) rather than flat blankets."
+  },
+  "layouts": {
+    "spacing": "Generous Spacing Philosophy: p-8, p-12, p-24. Double the standard padding.",
+    "page_blueprints": {
+      "master_hub": {
+        "hero": "Kinetic typography text-reveal hero. Left aligned massive text, right aligned spotlight cut-out photo of Susan. Background features subtle parallax.",
+        "router_section": "The Crossroads: 3 massive vertical bento-style cards taking up full screen width combined on desktop (grid-cols-3). Hover expands the width slightly. Each card is tinted with its respective sub-brand color.",
+        "about": "Large elegant quote with oversized quotation marks. 'Bridging health, wealth, and leadership.'"
+      },
+      "nourish_and_thrive": {
+        "hero": "Split screen (Swiss grid). Left text, right clipped frame (arch shape). Sage green accents.",
+        "marquee": "Slow editorial ribbon with health specialties (Gut Health \u2022 Hormonal Balance \u2022 Mindful Nutrition) using Playfair Display.",
+        "content": "Bento grid (Mode A: Tetris) detailing coaching packages and supplementation advice. High negative space."
+      },
+      "women_prosper": {
+        "hero": "Overlapping images of women collaborating. Kinetic bold typography. Amber accents.",
+        "manifesto": "Numbered manifesto chapters (1. Wealth is Wellness. 2. Community over Competition.) styled with massive numbers.",
+        "content": "Asymmetrical grid for testimonials and mentorship programs."
+      },
+      "speaking_workshops": {
+        "hero": "Full-screen image of speaker on stage with a heavy glassmorphic overlay box containing the value proposition. Executive Navy accents.",
+        "content": "High-density data grid (Mode B) for workshop topics and outcomes.",
+        "booking_form": "Shadcn-based dedicated booking/inquiry form (org name, event date, audience size). Sharp 2px corner radius."
+      }
+    }
+  },
+  "motion": {
+    "libraries": [
+      "@studio-freight/lenis (Smooth scrolling)",
+      "framer-motion (Scroll reveals, micro-interactions)",
+      "react-fast-marquee (Editorial ribbon)"
+    ],
+    "animations": {
+      "hero_kinetic": "Masked line-by-line reveal on load using framer-motion (y: '100%' to '0%' inside an overflow-hidden wrapper).",
+      "parallax": "Subtle parallax on hero images and background shapes using framer-motion useScroll.",
+      "hover_states": "Micro-interactions on all links/buttons (scale: 1.05, bg transition)."
+    }
+  },
+  "components": {
+    "reusable": {
+      "button": "Pill-shaped (rounded-full) for Master/Health/Women, Sharp edges (rounded-sm) for B2B/Speaking. Must include hover micro-animations.",
+      "glassmorphism": "Used for sticky headers and B2B floating overlays (backdrop-blur-xl, bg-white/70, 1px border-white/20).",
+      "forms": "Use Shadcn Form, Input, Select, DatePicker. Customize Shadcn default to remove Vercel-look. Apply sub-brand accent color to focus rings."
+    }
+  },
+  "media": {
+    "images": [
+      {
+        "category": "Master Hub - Susan Portrait",
+        "url": "https://images.unsplash.com/photo-1563132337-f159f484226c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwzfHxjb25maWRlbnQlMjBibGFjayUyMHdvbWFuJTIwcG9ydHJhaXQlMjBwcm9mZXNzaW9uYWwlMjB3YXJtfGVufDB8fHx8MTc4Njk3NzU5Mnww&ixlib=rb-4.1.0&q=85",
+        "description": "Confident black woman in orange blazer. Cut out the background for spotlight effect."
+      },
+      {
+        "category": "Nourish & Thrive - Health",
+        "url": "https://images.pexels.com/photos/5622215/pexels-photo-5622215.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Woman with healthy food assortment, promoting fitness and nutrition."
+      },
+      {
+        "category": "Women Prosper - Community",
+        "url": "https://images.pexels.com/photos/7491015/pexels-photo-7491015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Diverse group of women in a collaborative business meeting."
+      },
+      {
+        "category": "Speaking & Workshops - Corporate",
+        "url": "https://images.pexels.com/photos/34774349/pexels-photo-34774349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Speaker presenting at a tech conference."
+      }
+    ]
+  },
+  "3d_libraries": {
+    "parallax_moment": "Use Framer Motion 3D or react-spring-parallax for a subtle 2.5D layer effect on the Master Hub hero image and 'router' crossroads section."
+  },
+  "accessibility": {
+    "testing": "All interactive and key informational elements MUST include a `data-testid` attribute (kebab-case, role-based).",
+    "contrast": "Ensure text contrast meets APCA/WCAG AA standards, especially over imagery. Use text-shadow if needed.",
+    "motion": "Respect `prefers-reduced-motion` for all framer-motion animations."
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not use generic centered layouts or simplistic gradients.",
+    "Use 2-3x more spacing (p-8 to p-24) to create a premium, editorial feel.",
+    "Implement glassmorphism with high blur (12-24px) for sticky headers.",
+    "Never apply `transition: all`. Target specific properties like `transition-colors` or `transition-transform`.",
+    "Do not center align the app container (`.App { text-align: center; }` is strictly forbidden).",
+    "Every interaction needs micro-animations (hover states, entrance reveals).",
+    "Include subtle grain textures/noise overlays via CSS/SVG to elevate the design.",
+    "Only use provided images. DO NOT use placeholder text or mock URLs.",
+    "Install and use `lucide-react` or `@phosphor-icons/react` for elegant, thin-weight icons.",
+    "Use `sonner` for toast notifications (if required)."
+  ]
+}
