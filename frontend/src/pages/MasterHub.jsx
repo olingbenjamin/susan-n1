@@ -67,7 +67,7 @@ export default function MasterHub() {
 
   return (
     <div className="bg-linen min-h-screen">
-      <Navbar accent="#C07C66" />
+      <Navbar accent="#A8812E" />
 
       {/* HERO */}
       <section ref={heroRef} className="relative overflow-hidden pt-[76px]">
@@ -214,7 +214,7 @@ export default function MasterHub() {
         </Stagger>
       </section>
 
-      <Footer accent="#C07C66" />
+      <Footer accent="#A8812E" />
     </div>
   );
 }

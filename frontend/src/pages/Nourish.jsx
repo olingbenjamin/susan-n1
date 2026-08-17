@@ -8,7 +8,8 @@ import Footer from "@/components/Footer";
 import { MaskedLines, Reveal, Stagger, StaggerItem, RevealWords } from "@/lib/motion";
 import { IMAGES, NOURISH } from "@/lib/content";
 
-const SAGE = "#6B7F60";
+const SAGE = "#33501D";
+const GOLD = "#A8812E";
 
 export default function Nourish() {
   const heroRef = useRef(null);
@@ -16,7 +17,7 @@ export default function Nourish() {
   const imgY = useTransform(scrollYProgress, [0, 1], [0, 120]);
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#F7F6F1" }}>
+    <div className="min-h-screen" style={{ backgroundColor: "#F6F1E4" }}>
       <Navbar accent={SAGE} />
 
       {/* HERO */}
@@ -45,14 +46,14 @@ export default function Nourish() {
             >
               Evidence-informed nutrition coaching for hormonal balance, gut health, and lasting energy — without the anxiety or overwhelm.
             </motion.p>
-            <motion.a
-              href="#packages" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1, duration: 0.8 }}
+            <a
+              href="#packages"
               data-testid="hero-cta-nourish"
               className="mt-10 inline-flex rounded-full px-8 py-4 text-sm uppercase tracking-[0.12em] text-white transition-transform hover:scale-[1.03]"
               style={{ backgroundColor: SAGE }}
             >
               Explore coaching
-            </motion.a>
+            </a>
           </div>
 
           <div className="relative">
@@ -60,7 +61,7 @@ export default function Nourish() {
               initial={{ clipPath: "inset(100% 0 0 0)" }} animate={{ clipPath: "inset(0 0 0 0)" }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
               className="relative overflow-hidden aspect-[4/5] rounded-t-[280px] rounded-b-[20px]"
-              style={{ backgroundColor: NOURISH ? "#E1E5D8" : undefined }}
+              style={{ backgroundColor: NOURISH ? "#DCE3CE" : undefined }}
             >
               <motion.img style={{ y: imgY }} src={IMAGES.healthPerson} alt="Wellness coaching" className="h-[112%] w-full object-cover" />
             </motion.div>
@@ -69,7 +70,7 @@ export default function Nourish() {
       </section>
 
       {/* MARQUEE */}
-      <section className="border-y py-5" style={{ borderColor: "#E1E5D8", backgroundColor: "#EEF0E8" }}>
+      <section className="border-y py-5" style={{ borderColor: "#DCE3CE", backgroundColor: "#E8E9D7" }}>
         <Marquee speed={35} gradient={false} autoFill>
           {NOURISH.marquee.map((m, i) => (
             <span key={i} className="mx-8 font-accent italic text-3xl md:text-4xl flex items-center gap-8" style={{ color: SAGE }}>
@@ -90,7 +91,7 @@ export default function Nourish() {
             <StaggerItem key={s.title}>
               <div
                 className="group h-full rounded-[3px] border bg-white p-8 transition-all duration-500 hover:-translate-y-1"
-                style={{ borderColor: "#E1E5D8" }}
+                style={{ borderColor: "#DCE3CE" }}
                 data-testid={`specialty-${i}`}
               >
                 <span className="font-heading text-2xl" style={{ color: SAGE }}>0{i + 1}</span>
@@ -104,7 +105,7 @@ export default function Nourish() {
 
       {/* SUPPLEMENTATION */}
       <section className="mx-auto max-w-[1500px] px-6 md:px-10 pb-24 md:pb-32">
-        <div className="grid lg:grid-cols-12 gap-10 items-center rounded-[24px] p-8 md:p-14" style={{ backgroundColor: "#E1E5D8" }}>
+        <div className="grid lg:grid-cols-12 gap-10 items-center rounded-[24px] p-8 md:p-14" style={{ backgroundColor: "#DCE3CE" }}>
           <div className="lg:col-span-5">
             <Reveal>
               <div className="rounded-[16px] overflow-hidden aspect-[4/3]">
@@ -149,7 +150,7 @@ export default function Nourish() {
             <StaggerItem key={p.name}>
               <div
                 className={`h-full rounded-[4px] p-8 flex flex-col transition-transform duration-500 hover:-translate-y-1 ${p.featured ? "text-white" : "bg-white text-ink border"}`}
-                style={{ backgroundColor: p.featured ? SAGE : undefined, borderColor: "#E1E5D8" }}
+                style={{ backgroundColor: p.featured ? SAGE : undefined, borderColor: "#DCE3CE" }}
                 data-testid={`package-${p.name.toLowerCase().replace(/\s+/g, "-")}`}
               >
                 <div className="flex items-center justify-between">

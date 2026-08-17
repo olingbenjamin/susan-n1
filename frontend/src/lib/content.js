@@ -27,8 +27,8 @@ export const TRACKS = [
     name: "Nourish & Thrive",
     tagline: "Health & Nutrition Coaching",
     blurb: "Evidence-informed support for hormonal balance, gut health, and the everyday rhythms of feeling well.",
-    accent: "#6B7F60",
-    accentSoft: "#E1E5D8",
+    accent: "#33501D",
+    accentSoft: "#E7E2CF",
     image: IMAGES.healthPerson,
   },
   {

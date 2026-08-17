@@ -5,13 +5,13 @@
 @tailwind utilities;
 
 :root {
-  --linen: #F9F6F0;
-  --linen-deep: #F1EBDF;
-  --ink: #1A1512;
-  --clay: #C07C66;
+  --linen: #F6F1E4;
+  --linen-deep: #EDE6D3;
+  --ink: #231A0F;
+  --clay: #A8812E;
   --surface: #FFFFFF;
   --border: #E5DFD3;
-  --sage: #6B7F60;
+  --sage: #33501D;
   --gold: #D49A3E;
   --navy: #1E2B3C;
 
@@ -27,13 +27,13 @@
   --secondary-foreground: 27 20% 9%;
   --muted: 42 25% 90%;
   --muted-foreground: 30 8% 40%;
-  --accent: 15 42% 58%;
+  --accent: 42 58% 42%;
   --accent-foreground: 0 0% 100%;
   --destructive: 0 72% 45%;
   --destructive-foreground: 0 0% 98%;
   --border: 39 30% 87%;
   --input: 39 30% 87%;
-  --ring: 15 42% 58%;
+  --ring: 42 58% 42%;
   --radius: 0.5rem;
 }
 

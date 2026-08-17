@@ -11,14 +11,14 @@ module.exports = {
       },
       colors: {
         linen: {
-          DEFAULT: '#F9F6F0',
-          deep: '#F1EBDF',
+          DEFAULT: '#F6F1E4',
+          deep: '#EDE6D3',
         },
-        ink: '#1A1512',
-        clay: '#C07C66',
+        ink: '#231A0F',
+        clay: '#A8812E',
         sage: {
-          DEFAULT: '#6B7F60',
-          soft: '#E1E5D8',
+          DEFAULT: '#33501D',
+          soft: '#DCE3CE',
         },
         gold: {
           DEFAULT: '#D49A3E',
