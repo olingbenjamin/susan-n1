@@ -67,7 +67,7 @@ export default function MasterHub() {
 
   return (
     <div className="bg-linen min-h-screen">
-      <Navbar accent="#C2A970" />
+      <Navbar accent="#231A0F" />
 
       {/* HERO */}
       <section ref={heroRef} className="relative overflow-hidden pt-[76px]">
@@ -78,7 +78,7 @@ export default function MasterHub() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6, duration: 1 }}
-                className="text-xs uppercase tracking-[0.24em] text-clay mb-6"
+                className="text-xs uppercase tracking-[0.24em] text-ink/50 mb-6"
                 data-testid="hero-eyebrow"
               >
                 Coach · Mentor · Speaker
@@ -89,7 +89,7 @@ export default function MasterHub() {
                 lines={[
                   <span key="h" style={{ color: "#33501D" }}>Health.</span>,
                   <span key="w" style={{ color: "#C24E76" }}>Wealth.</span>,
-                  <span key="l" className="font-accent italic" style={{ color: "#1E2B3C" }}>Leadership.</span>,
+                  <span key="l" className="font-accent italic" style={{ color: "#3E71A8" }}>Leadership.</span>,
                 ]}
               />
               <motion.p
@@ -101,23 +101,18 @@ export default function MasterHub() {
                 {SUSAN_BIO.intro}
               </motion.p>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.05, duration: 0.9 }}
-                className="mt-10 flex items-center gap-6"
-              >
+              <div className="mt-10 flex items-center gap-6">
                 <a
                   href="#crossroads"
                   data-testid="hero-explore-btn"
                   className="group inline-flex items-center gap-3 rounded-full bg-ink text-linen pl-7 pr-3 py-3 text-sm uppercase tracking-[0.12em] transition-transform hover:scale-[1.03]"
                 >
                   Choose your path
-                  <span className="h-9 w-9 rounded-full bg-clay flex items-center justify-center">
+                  <span className="h-9 w-9 rounded-full bg-[#33501D] flex items-center justify-center">
                     <ArrowDown size={16} />
                   </span>
                 </a>
-              </motion.div>
+              </div>
             </motion.div>
 
             <div className="lg:col-span-5 relative">
@@ -135,15 +130,10 @@ export default function MasterHub() {
                   data-testid="hero-portrait"
                 />
               </motion.div>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 1.1, duration: 0.7 }}
-                className="absolute -left-4 bottom-10 bg-linen border border-border rounded-full px-6 py-4 shadow-[0_20px_50px_-20px_rgba(26,21,18,0.4)]"
-              >
-                <p className="font-heading text-3xl leading-none text-ink">3,400+</p>
+              <div className="absolute left-2 -bottom-5 bg-white border border-black/5 rounded-2xl px-6 py-4 shadow-[0_24px_60px_-24px_rgba(26,21,18,0.5)]">
+                <p className="font-heading text-3xl leading-none text-[#33501D]">3,400+</p>
                 <p className="text-[11px] uppercase tracking-[0.18em] text-ink/60 mt-1">Women coached</p>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -154,7 +144,7 @@ export default function MasterHub() {
         <Marquee speed={40} gradient={false} autoFill>
           {["Nourish & Thrive", "Women Prosper", "Speaking & Workshops", "Holistic Empowerment"].map((t, i) => (
             <span key={i} className="mx-10 font-accent italic text-3xl md:text-4xl text-ink/70 flex items-center gap-10">
-              {t} <span className="text-clay not-italic font-body text-lg">✦</span>
+              {t} <span className="text-ink/25 not-italic font-body text-lg">✦</span>
             </span>
           ))}
         </Marquee>
@@ -172,7 +162,7 @@ export default function MasterHub() {
           </div>
           <div className="lg:col-span-7 flex flex-col justify-center">
             <Reveal>
-              <p className="text-xs uppercase tracking-[0.24em] text-clay mb-8">The Woman Behind The Work</p>
+              <p className="text-xs uppercase tracking-[0.24em] text-ink/50 mb-8">The Woman Behind The Work</p>
             </Reveal>
             <RevealWords
               text="A woman who feels well in her body is a woman ready to build the life she imagines."
@@ -186,9 +176,9 @@ export default function MasterHub() {
               ))}
             </div>
             <Stagger className="mt-12 grid grid-cols-3 gap-6 border-t border-border pt-10">
-              {SUSAN_BIO.stats.map((s) => (
+              {SUSAN_BIO.stats.map((s, i) => (
                 <StaggerItem key={s.label}>
-                  <p className="font-heading text-4xl md:text-5xl text-clay">{s.value}</p>
+                  <p className="font-heading text-4xl md:text-5xl" style={{ color: ["#33501D", "#C24E76", "#3E71A8"][i] }}>{s.value}</p>
                   <p className="text-xs uppercase tracking-[0.14em] text-ink/55 mt-2">{s.label}</p>
                 </StaggerItem>
               ))}
@@ -218,7 +208,7 @@ export default function MasterHub() {
         </Stagger>
       </section>
 
-      <Footer accent="#C2A970" />
+      <Footer accent="#E7DFCE" />
     </div>
   );
 }

@@ -37,8 +37,8 @@ export default function Prosper() {
 
           <MaskedLines
             as="h1"
-            className="font-heading font-light tracking-tight leading-[0.84] text-ink text-[16vw] md:text-[10rem] lg:text-[12rem]"
-            lines={[<>Build your <span className="font-accent italic" style={{ color: GOLD }}>fortune.</span></>]}
+            className="font-heading font-light tracking-tight leading-[0.86] text-ink text-6xl sm:text-7xl md:text-[9rem] lg:text-[11rem]"
+            lines={["Build your", <span key="f" className="font-accent italic" style={{ color: GOLD }}>fortune.</span>]}
           />
 
           <div className="grid lg:grid-cols-12 gap-10 mt-10 items-start">

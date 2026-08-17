@@ -80,6 +80,28 @@ export default function Nourish() {
         </Marquee>
       </section>
 
+      {/* WHO I WALK BESIDE — maternal & family */}
+      <section className="mx-auto max-w-[1500px] px-5 sm:px-6 md:px-10 py-20 md:py-28" data-testid="family-section">
+        <div className="max-w-2xl mb-10 md:mb-14">
+          <Reveal><p className="text-xs uppercase tracking-[0.24em] mb-5 md:mb-6" style={{ color: SAGE }}>Who I Walk Beside</p></Reveal>
+          <Reveal delay={0.1}><h2 className="font-heading text-4xl sm:text-5xl md:text-6xl font-light text-ink leading-[1.02]">From conception to a thriving family.</h2></Reveal>
+        </div>
+        <Stagger className="grid sm:grid-cols-3 gap-4">
+          {NOURISH.family.map((f) => (
+            <StaggerItem key={f.key}>
+              <div className="group relative overflow-hidden rounded-[6px] aspect-[3/4]">
+                <img src={IMAGES[f.key]} alt={f.label} loading="lazy" className="h-full w-full object-cover transition-transform duration-[900ms] group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+                <div className="absolute bottom-0 left-0 p-6">
+                  <p className="text-[11px] uppercase tracking-[0.18em] text-white/70 mb-1">{f.note}</p>
+                  <h3 className="font-heading text-2xl md:text-3xl text-white leading-tight">{f.label}</h3>
+                </div>
+              </div>
+            </StaggerItem>
+          ))}
+        </Stagger>
+      </section>
+
       {/* SPECIALTIES BENTO */}
       <section className="mx-auto max-w-[1500px] px-6 md:px-10 py-24 md:py-32" data-testid="specialties-section">
         <div className="max-w-2xl mb-16">

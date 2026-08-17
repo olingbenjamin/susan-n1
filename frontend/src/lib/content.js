@@ -1,23 +1,29 @@
 // Central content + imagery for Susan Tumuhairwe's brand ecosystem.
+// Brand colours: Green (health), Pink (business), Blue (speaking) on a warm off-white base.
 
 export const IMAGES = {
+  // Susan — real client campaign photos
   susanHero: "https://customer-assets-4nw71qhi.emergentagent.net/job_susan-speaks/artifacts/bw0jeu94_4eae0226-ab10-438c-8773-1b6c95b17bba.JPG",
   susanPortrait: "https://customer-assets-4nw71qhi.emergentagent.net/job_susan-speaks/artifacts/nbd90ifk_5d25fa02-c533-4e6b-ba00-d554779317fd.JPG",
-  // Health (client campaign photos)
+
+  // Health / maternal / family (African)
   healthPerson: "https://customer-assets-4nw71qhi.emergentagent.net/job_susan-speaks/artifacts/nbd90ifk_5d25fa02-c533-4e6b-ba00-d554779317fd.JPG",
-  healthBowl: "https://images.unsplash.com/photo-1547592180-85f173990554?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHxoZWFsdGh5JTIwZm9vZCUyMG51dHJpdGlvbiUyMHdlbGxuZXNzJTIwZmxhdGxheXxlbnwwfHx8fDE3ODY5Nzc2NjJ8MA&ixlib=rb-4.1.0&q=85",
-  healthSupplements: "https://customer-assets-4nw71qhi.emergentagent.net/job_susan-speaks/artifacts/g8kotx69_3602686d-288e-466b-a384-2cf0da9969ac.JPG",
-  plateInfographic: "https://customer-assets-4nw71qhi.emergentagent.net/job_susan-speaks/artifacts/pxuk2kiw_6fa41f1e-6892-4c58-9f86-d7df1b17c50b.JPG",
-  healthVeg: "https://images.pexels.com/photos/7223295/pexels-photo-7223295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-  healthEgg: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxoZWFsdGh5JTIwZm9vZCUyMG51dHJpdGlvbiUyMHdlbGxuZXNzJTIwZmxhdGxheXxlbnwwfHx8fDE3ODY5Nzc2NjJ8MA&ixlib=rb-4.1.0&q=85",
-  // Business
-  prosperHero: "https://images.pexels.com/photos/27086165/pexels-photo-27086165.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200",
-  prosperMeeting: "https://images.pexels.com/photos/7491015/pexels-photo-7491015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=700",
-  prosperSigning: "https://images.pexels.com/photos/5710198/pexels-photo-5710198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-  // Speaking
-  stageHero: "https://images.unsplash.com/photo-1564522365984-c08ed1f78893?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwzfHx3b21hbiUyMHNwZWFrZXIlMjBvbiUyMHN0YWdlJTIwY29uZmVyZW5jZXxlbnwwfHx8fDE3ODY5Nzc2NjJ8MA&ixlib=rb-4.1.0&q=85",
-  workshopRoom: "https://images.unsplash.com/photo-1664382953481-141e97ad9825?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjB3b3Jrc2hvcCUyMHRyYWluaW5nJTIwc2Vzc2lvbiUyMGJ1c2luZXNzfGVufDB8fHx8MTc4Njk3NzY2Mnww&ixlib=rb-4.1.0&q=85",
-  workshopSeminar: "https://images.pexels.com/photos/8761336/pexels-photo-8761336.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  maternity: "https://images.pexels.com/photos/33903892/pexels-photo-33903892.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1000&w=760",
+  motherBaby: "https://images.pexels.com/photos/38385864/pexels-photo-38385864.png?auto=compress&cs=tinysrgb&dpr=2&h=1000&w=760",
+  motherBack: "https://images.unsplash.com/photo-1487546331507-fcf8a5d27ab3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxBZnJpY2FuJTIwbW90aGVyJTIwaG9sZGluZyUyMG5ld2Jvcm4lMjBiYWJ5fGVufDB8fHx8MTc4Njk4MTAyOHww&ixlib=rb-4.1.0&q=85",
+  children: "https://images.unsplash.com/photo-1521493959102-bdd6677fdd81?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNzl8MHwxfHNlYXJjaHwzfHxoYXBweSUyMEFmcmljYW4lMjBjaGlsZHJlbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzg2OTgxMDI4fDA&ixlib=rb-4.1.0&q=85",
+  localFood: "https://images.pexels.com/photos/38343259/pexels-photo-38343259.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1000&w=760",
+  healthSupplements: "https://images.pexels.com/photos/38343259/pexels-photo-38343259.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1000&w=760",
+
+  // Business / community (African)
+  prosperMeeting: "https://images.unsplash.com/photo-1655720357872-ce227e4164ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwyfHxBZnJpY2FuJTIwd29tZW4lMjBncm91cCUyMG1lZXRpbmclMjBjb2xsYWJvcmF0aW9ufGVufDB8fHx8MTc4Njk4MTAyOHww&ixlib=rb-4.1.0&q=85",
+  prosperSigning: "https://images.unsplash.com/photo-1573165706511-3ffde6ef1fe3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHw0fHxBZnJpY2FuJTIwd29tZW4lMjBncm91cCUyMG1lZXRpbmclMjBjb2xsYWJvcmF0aW9ufGVufDB8fHx8MTc4Njk4MTAyOHww&ixlib=rb-4.1.0&q=85",
+  prosperVendor: "https://images.unsplash.com/photo-1687422808311-a776f467a468?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxBZnJpY2FuJTIwd29tYW4lMjBlbnRyZXByZW5ldXIlMjBzbWFsbCUyMGJ1c2luZXNzfGVufDB8fHx8MTc4Njk4MTAyOHww&ixlib=rb-4.1.0&q=85",
+
+  // Speaking (African)
+  stageHero: "https://images.pexels.com/photos/10035603/pexels-photo-10035603.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1100&w=1500",
+  workshopRoom: "https://images.unsplash.com/photo-1778877035189-60f41e9d18bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwyfHxBZnJpY2FuJTIwYnVzaW5lc3MlMjBzZW1pbmFyJTIwYXVkaWVuY2UlMjB0cmFpbmluZ3xlbnwwfHx8fDE3ODY5ODEwMjh8MA&ixlib=rb-4.1.0&q=85",
+  workshopSeminar: "https://images.pexels.com/photos/8761729/pexels-photo-8761729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=700&w=1000",
 };
 
 export const TRACKS = [
@@ -27,10 +33,10 @@ export const TRACKS = [
     index: "01",
     name: "Nourish & Thrive",
     tagline: "Health & Nutrition Coaching",
-    blurb: "Evidence-informed support for hormonal balance, gut health, and the everyday rhythms of feeling well.",
+    blurb: "Evidence-informed support for fertility, hormonal balance, gut health and everyday family nutrition.",
     accent: "#33501D",
     accentSoft: "#E7E2CF",
-    image: IMAGES.healthPerson,
+    image: IMAGES.maternity,
   },
   {
     id: "prosper",
@@ -50,17 +56,17 @@ export const TRACKS = [
     name: "Speaking & Workshops",
     tagline: "Corporate Training & Keynotes",
     blurb: "Polished, structured programs for HR leaders, executives, and NGOs ready to invest in their people.",
-    accent: "#1E2B3C",
-    accentSoft: "#D8DCE3",
+    accent: "#3E71A8",
+    accentSoft: "#DCE8F4",
     image: IMAGES.stageHero,
   },
 ];
 
 export const SUSAN_BIO = {
-  intro: "I'm Susan Tumuhairwe — a coach, mentor, and speaker helping women build health, wealth, and the confidence to lead.",
+  intro: "I'm Susan Tumuhairwe — a coach, mentor, and speaker helping African women build health, wealth, and the confidence to lead.",
   paragraphs: [
-    "For over a decade I've worked at the intersection of wellbeing and ambition, guided by one belief: a woman who feels well in her body is a woman ready to build the life she imagines.",
-    "My work spans three worlds — clinical-grade nutrition coaching, community-led financial mentorship, and boardroom keynotes. Different rooms, one thread: holistic female empowerment.",
+    "For over a decade I've walked with women across Uganda and beyond, guided by one belief: a woman who feels well in her body is a woman ready to build the life she imagines.",
+    "My work spans three worlds — evidence-informed nutrition coaching, community-led financial mentorship, and boardroom keynotes. Different rooms, one thread: holistic female empowerment.",
   ],
   stats: [
     { value: "10+", label: "Years mentoring" },
@@ -71,22 +77,27 @@ export const SUSAN_BIO = {
 
 // ---- Nourish & Thrive ----
 export const NOURISH = {
-  marquee: ["Gut Health", "Hormonal Balance", "Mindful Nutrition", "Energy & Sleep", "Metabolic Wellness", "Supplementation"],
+  marquee: ["Fertility Support", "Hormonal Balance", "Gut Health", "Family Nutrition", "Energy & Sleep", "Supplementation"],
   specialties: [
+    { title: "Fertility Support", desc: "Nourish, balance and prepare your body to conceive — supporting egg quality, cycle health and reproductive wellbeing." },
     { title: "Hormonal Balance", desc: "Cycle syncing, perimenopause support, and calming the cortisol rollercoaster with food-first strategies." },
     { title: "Gut Health", desc: "Restore digestion and the microbiome through gentle, sustainable protocols — no elimination overwhelm." },
-    { title: "Energy & Sleep", desc: "Rebuild deep, restorative rest and steady all-day energy without stimulants or crashes." },
-    { title: "Metabolic Wellness", desc: "Blood-sugar stability and body-composition goals rooted in evidence, not restriction." },
+    { title: "Family Nutrition", desc: "Wholesome, local-food guidance for new mothers, growing children and the whole household." },
+  ],
+  family: [
+    { key: "maternity", label: "Trying to conceive", note: "Fertility & hormonal support" },
+    { key: "motherBaby", label: "New mothers", note: "Postnatal nourishment" },
+    { key: "children", label: "Growing families", note: "Nutrition for little ones" },
   ],
   supplements: [
     { name: "Magnesium Glycinate", note: "For calm & sleep" },
     { name: "Omega-3 (EPA/DHA)", note: "Mood & inflammation" },
     { name: "Vitamin D3 + K2", note: "Immunity & bone" },
-    { name: "Adaptogenic Blends", note: "Stress resilience" },
+    { name: "Prenatal & Folate", note: "Fertility & pregnancy" },
   ],
   packages: [
     { name: "The Reset", length: "6 weeks", desc: "A focused foundation — labs review, personalised nutrition map, and weekly check-ins.", featured: false },
-    { name: "Deep Restore", length: "12 weeks", desc: "My signature journey through hormones, gut, and lifestyle with full protocol design.", featured: true },
+    { name: "Fertility Journey", length: "12 weeks", desc: "My signature Nourish · Balance · Conceive programme through hormones, gut and lifestyle.", featured: true },
     { name: "Thrive Membership", length: "Ongoing", desc: "Monthly guidance, seasonal protocols, and a private space to ask anything.", featured: false },
   ],
 };
@@ -105,8 +116,8 @@ export const PROSPER = {
   ],
   testimonials: [
     { quote: "I went from too scared to name a price, to running a business that pays my rent. Susan gave me the room and the nerve.", name: "Aisha K.", role: "Founder, Bloom Textiles" },
-    { quote: "This community feels like a warm push. Every week someone reminds me I'm capable of more.", name: "Grace M.", role: "Consultant" },
-    { quote: "Wealth finally feels like something I'm allowed to want. That shift changed my whole year.", name: "Priya S.", role: "Coach" },
+    { quote: "This community feels like a warm push. Every week someone reminds me I'm capable of more.", name: "Grace M.", role: "Market Trader, Kampala" },
+    { quote: "Wealth finally feels like something I'm allowed to want. That shift changed my whole year.", name: "Patience A.", role: "Salon Owner" },
   ],
 };
 
