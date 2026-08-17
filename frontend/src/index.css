@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Hind:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --linen: #F6F1E4;
-  --linen-deep: #EDE6D3;
+  --linen: #FBF8F2;
+  --linen-deep: #F3EDE1;
   --ink: #231A0F;
-  --clay: #A8812E;
+  --clay: #C2A970;
   --surface: #FFFFFF;
   --border: #E5DFD3;
   --sage: #33501D;
@@ -48,7 +48,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Hind', sans-serif;
   background-color: var(--linen);
   color: var(--ink);
   overflow-x: hidden;

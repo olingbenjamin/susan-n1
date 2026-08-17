@@ -6,16 +6,20 @@ module.exports = {
     extend: {
       fontFamily: {
         heading: ['Cormorant Garamond', 'serif'],
-        body: ['Manrope', 'sans-serif'],
+        body: ['Hind', 'sans-serif'],
         accent: ['Playfair Display', 'serif'],
       },
       colors: {
         linen: {
-          DEFAULT: '#F6F1E4',
-          deep: '#EDE6D3',
+          DEFAULT: '#FBF8F2',
+          deep: '#F3EDE1',
         },
         ink: '#231A0F',
-        clay: '#A8812E',
+        clay: '#C2A970',
+        pink: {
+          DEFAULT: '#C24E76',
+          soft: '#F5DEE7',
+        },
         sage: {
           DEFAULT: '#33501D',
           soft: '#DCE3CE',

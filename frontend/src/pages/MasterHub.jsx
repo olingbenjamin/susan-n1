@@ -67,7 +67,7 @@ export default function MasterHub() {
 
   return (
     <div className="bg-linen min-h-screen">
-      <Navbar accent="#A8812E" />
+      <Navbar accent="#C2A970" />
 
       {/* HERO */}
       <section ref={heroRef} className="relative overflow-hidden pt-[76px]">
@@ -86,7 +86,11 @@ export default function MasterHub() {
               <MaskedLines
                 as="h1"
                 className="font-heading font-light tracking-tight leading-[0.86] text-ink text-[15vw] sm:text-7xl md:text-8xl lg:text-[7.2rem]"
-                lines={["Health.", "Wealth.", <span key="lead" className="font-accent italic text-clay">Leadership.</span>]}
+                lines={[
+                  <span key="h" style={{ color: "#33501D" }}>Health.</span>,
+                  <span key="w" style={{ color: "#C24E76" }}>Wealth.</span>,
+                  <span key="l" className="font-accent italic" style={{ color: "#1E2B3C" }}>Leadership.</span>,
+                ]}
               />
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -214,7 +218,7 @@ export default function MasterHub() {
         </Stagger>
       </section>
 
-      <Footer accent="#A8812E" />
+      <Footer accent="#C2A970" />
     </div>
   );
 }

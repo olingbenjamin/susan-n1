@@ -1,12 +1,13 @@
 // Central content + imagery for Susan Tumuhairwe's brand ecosystem.
 
 export const IMAGES = {
-  susanHero: "https://images.unsplash.com/photo-1563132337-f159f484226c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwzfHxjb25maWRlbnQlMjBibGFjayUyMHdvbWFuJTIwcG9ydHJhaXQlMjBwcm9mZXNzaW9uYWwlMjB3YXJtfGVufDB8fHx8MTc4Njk3NzU5Mnww&ixlib=rb-4.1.0&q=85",
-  susanPortrait: "https://images.pexels.com/photos/32222060/pexels-photo-32222060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=700",
-  // Health
-  healthPerson: "https://images.pexels.com/photos/5622215/pexels-photo-5622215.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=700",
+  susanHero: "https://customer-assets-4nw71qhi.emergentagent.net/job_susan-speaks/artifacts/bw0jeu94_4eae0226-ab10-438c-8773-1b6c95b17bba.JPG",
+  susanPortrait: "https://customer-assets-4nw71qhi.emergentagent.net/job_susan-speaks/artifacts/nbd90ifk_5d25fa02-c533-4e6b-ba00-d554779317fd.JPG",
+  // Health (client campaign photos)
+  healthPerson: "https://customer-assets-4nw71qhi.emergentagent.net/job_susan-speaks/artifacts/nbd90ifk_5d25fa02-c533-4e6b-ba00-d554779317fd.JPG",
   healthBowl: "https://images.unsplash.com/photo-1547592180-85f173990554?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHxoZWFsdGh5JTIwZm9vZCUyMG51dHJpdGlvbiUyMHdlbGxuZXNzJTIwZmxhdGxheXxlbnwwfHx8fDE3ODY5Nzc2NjJ8MA&ixlib=rb-4.1.0&q=85",
-  healthSupplements: "https://images.pexels.com/photos/7615467/pexels-photo-7615467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  healthSupplements: "https://customer-assets-4nw71qhi.emergentagent.net/job_susan-speaks/artifacts/g8kotx69_3602686d-288e-466b-a384-2cf0da9969ac.JPG",
+  plateInfographic: "https://customer-assets-4nw71qhi.emergentagent.net/job_susan-speaks/artifacts/pxuk2kiw_6fa41f1e-6892-4c58-9f86-d7df1b17c50b.JPG",
   healthVeg: "https://images.pexels.com/photos/7223295/pexels-photo-7223295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   healthEgg: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxoZWFsdGh5JTIwZm9vZCUyMG51dHJpdGlvbiUyMHdlbGxuZXNzJTIwZmxhdGxheXxlbnwwfHx8fDE3ODY5Nzc2NjJ8MA&ixlib=rb-4.1.0&q=85",
   // Business
@@ -38,8 +39,8 @@ export const TRACKS = [
     name: "Women Prosper",
     tagline: "Financial Freedom & Enterprise",
     blurb: "A vibrant community building additional income, leadership, and the courage to begin — together.",
-    accent: "#D49A3E",
-    accentSoft: "#F0E5D1",
+    accent: "#C24E76",
+    accentSoft: "#F5DEE7",
     image: IMAGES.prosperMeeting,
   },
   {

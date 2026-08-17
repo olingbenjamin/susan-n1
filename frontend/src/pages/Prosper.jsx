@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import { MaskedLines, Reveal, Stagger, StaggerItem, RevealWords } from "@/lib/motion";
 import { IMAGES, PROSPER } from "@/lib/content";
 
-const GOLD = "#D49A3E";
+const GOLD = "#C24E76";
 
 export default function Prosper() {
   const heroRef = useRef(null);
@@ -99,7 +99,7 @@ export default function Prosper() {
             <StaggerItem key={p.name}>
               <div
                 className="group h-full rounded-[20px] p-8 flex flex-col justify-between min-h-[300px] transition-transform duration-500 hover:-translate-y-1.5"
-                style={{ backgroundColor: i === 1 ? GOLD : "#F0E5D1" }}
+                style={{ backgroundColor: i === 1 ? GOLD : "#F5DEE7" }}
                 data-testid={`program-${i}`}
               >
                 <div className="flex justify-between items-start">
@@ -122,7 +122,7 @@ export default function Prosper() {
         <Stagger className="grid md:grid-cols-3 gap-5">
           {PROSPER.testimonials.map((t, i) => (
             <StaggerItem key={t.name} className={i === 1 ? "md:mt-12" : ""}>
-              <div className="h-full bg-white border rounded-[16px] p-8" style={{ borderColor: "#F0E5D1" }}>
+              <div className="h-full bg-white border rounded-[16px] p-8" style={{ borderColor: "#F5DEE7" }}>
                 <Quote size={30} style={{ color: GOLD }} className="mb-6" />
                 <p className="font-accent italic text-xl md:text-2xl leading-snug text-ink mb-8">"{t.quote}"</p>
                 <div className="border-t border-ink/10 pt-4">
